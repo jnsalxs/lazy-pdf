@@ -12,5 +12,5 @@ __Back__ : Express
 Lancez les commandes :  
   
 `npm i` pour installer les dépendances  
-`npm run dev `pour lancer le front  
+`npm run dev` pour lancer le front  
 `node server.js` pour lancer le serveur
