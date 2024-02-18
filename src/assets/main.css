@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'JetbrainsMono_Regular';
+  src: url(@/assets/fonts/JetbrainsMono-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'JetbrainsMono_Regular', sans-serif;
+  background-color: #ffffff;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 50px;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #000000;
+}
+
+span {
+  line-height: 1.5;
+  color: #FB6107;
+}
+
+label {
+  font-weight: bold;
+}
