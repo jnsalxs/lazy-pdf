@@ -104,8 +104,8 @@ const handleSubmit = async (event) => {
             &:focus {
             border: 2px solid #fb6107;
             outline: none; 
+            }
         }
-    }
         .col-lg-3 {
             display: flex;
             align-items: center;
