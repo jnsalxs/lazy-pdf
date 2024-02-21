@@ -4,10 +4,6 @@ import { useFormStore } from "../stores/formStore";
 
 const store = useFormStore();
 
-function updateStoreValue(key, value) {
-  store.updateFormData({ [key]: value });
-}
-
 const handleSubmit = async (event) => {
   event.preventDefault();
 
@@ -43,27 +39,27 @@ const handleSubmit = async (event) => {
         <div class="row">
             <div class="col-xs-6 col-lg-3">
                 <label for="input-radio">Monsieur</label>
-                <input v-model="store.formData.gender" @input="updateStoreValue('gender', $event.target.value)" name="input-radio" type="radio" value="Monsieur">
+                <input v-model="store.formData.gender" name="input-radio" type="radio" value="Monsieur">
             </div>
             <div class="col-xs-6 col-lg-3">
                 <label for="input-radio">Madame</label>
-                <input v-model="store.formData.gender" @input="updateStoreValue('gender', $event.target.value)" name="input-radio" type="radio" value="Madame">
+                <input v-model="store.formData.gender" name="input-radio" type="radio" value="Madame">
             </div>
         </div>
         <div class="row">
             <div class="col-lg-6 col-xs-12">
                 <label for="input-name">Nom</label><br>
-                <input v-model="store.formData.name" @input="updateStoreValue('name', $event.target.value)" placeholder="Nom" type="text">
+                <input v-model="store.formData.name" placeholder="Nom" type="text">
             </div>
             <div class="col-lg-6 col-xs-12">
                 <label for="input-firstname">Prénom</label><br>
-                <input v-model="store.formData.firstname" @input="updateStoreValue('firstname', $event.target.value)" name="input-firstname" placeholder="Prénom" type="text">
+                <input v-model="store.formData.firstname" name="input-firstname" placeholder="Prénom" type="text">
             </div>
         </div>
         <div class="row">
             <div class="col-lg-12 col-xs-12">
                 <label for="reason">Motif</label><br>
-                <select v-model="store.formData.reason" @input="updateStoreValue('reason', $event.target.value)" name="reason" id="input-select">
+                <select v-model="store.formData.reason" name="reason" id="input-select">
                     <option value="Choisissez un motif" >Choisissez un motif</option>
                     <option value="un rhume du genou" >Rhume du genou</option>
                     <option value="une grippe de l'épaule" >Grippe de l'épaule</option>
@@ -75,11 +71,11 @@ const handleSubmit = async (event) => {
         <div class="row">
             <div class="col-lg-6 col-xs-12">
                 <label for="start-date">Date début</label><br>
-                <input v-model="store.formData.startDate" @input="updateStoreValue('startDate', $event.target.value)" name="start-date" type="date">
+                <input v-model="store.formData.startDate" name="start-date" type="date">
             </div>
             <div class="col-lg-6 col-xs-12">
                 <label for="end-date">Date fin</label><br>
-                <input v-model="store.formData.endDate" @input="updateStoreValue('endDate', $event.target.value)" name="end-date" type="date">
+                <input v-model="store.formData.endDate" name="end-date" type="date">
             </div>
         </div>
         <div class="row">

@@ -1,4 +1,3 @@
-// store.js
 import { defineStore } from 'pinia';
 
 export const useFormStore = defineStore('form', {
@@ -12,9 +11,4 @@ export const useFormStore = defineStore('form', {
       endDate: '',
     },
   }),
-  actions: {
-    updateFormData(data) {
-      this.formData = { ...this.formData, ...data };
-    },
-  },
 });
